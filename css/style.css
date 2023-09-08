@@ -2,6 +2,13 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
+.container-wrapper {}
+
+.container-wrapper--red {
+    background-color: #f05f40;
+    color: white;
+}
+
 .alert-container .col-12 {
     padding-left: 0;
     padding-right: 0;
@@ -37,12 +44,28 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .quotes-container {}
 
 .features-container {}
+
+/* Page headers */
+
+.page-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    margin-top: 0;
+}
+
+.quotes .page-header {
+    margin-bottom: 25px;
+}
 
 /*Block dividers*/
 
@@ -50,6 +73,7 @@ body {
     width: 75px;
     height: 5px;
     border: 0;
+    background-color: #444;
 }
 
 .block-divider--orange {
@@ -58,6 +82,17 @@ body {
 
 .block-divider--short {
     width: 35px;
+}
+
+.block-divider--white {
+    background-color: white;
+}
+
+/* Content containers*/
+
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
 
 /* Navbar*/
@@ -75,7 +110,7 @@ body {
     margin-bottom: 0;
     border: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.25);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .navbar .narbar-toggler {
@@ -136,3 +171,23 @@ body {
     border-color: #df4929;
 }
 
+.feature {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feature i {
+    margin-bottom: 20px;
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.feature .btn {
+    background-color: white;
+    border-color: white;
+    border-radius: 15px;
+    min-width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #f05f40;
+}
